@@ -1,4 +1,11 @@
 <style>
+div.warn {    
+  background-color: #ff8c00;
+  border-color: #00008b;
+  border-left: 5px solid #00008b;
+  padding: 0.5em;
+}
+
     @font-face {
         font-family: "Computer Modern";
         src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
@@ -61,3 +68,4 @@
                 }
         });
 </script>
+
