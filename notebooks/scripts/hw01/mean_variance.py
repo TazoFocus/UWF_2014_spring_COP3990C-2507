@@ -1,14 +1,15 @@
 '''
-Course: 
-Name: 
-Date: 
-Assignment:
+Course: COP3990C
+Name: JET
+Date: 1/12/14
+Assignment: Homework 1
 
 This program computes the mean and variance of a list of randomly generated integers
 '''
 
 # import the random package
 import random
+
 
 # initialize some variables
 mean          =  0.0
