@@ -20,7 +20,7 @@ txt_input = cli_list[1]
 csv_input = cli_list[2]
 
 
- 
+
 # ---------------------------------------------------
 #
 # processes the txt file and write out as a csv file
@@ -31,7 +31,7 @@ csv_input = cli_list[2]
 # read the file into a list
 with open(txt_input, 'rb') as fin:
 	lines = fin.readlines()
-	
+
 # initialize a dictionary to hold the values
 new_data = {}
 
@@ -42,8 +42,8 @@ for line in lines:
 	temp1.sort() # sort the data
 	temp1 = [str(x) for x in temp1] # change back to string
 	new_data[temp[-1].strip()] = [str(x) for x in temp1] # make the list as a string
-	
-	
+
+
 # print the dictionary
 print '\n'*4
 print 'The dictionary from ', txt_input, ' is:'
@@ -60,14 +60,14 @@ long_string  = ''
 for key in new_data:
 	long_string += key + ',' + ','.join(new_data[key]) + '\n'
 
-# remove the new line character from the string 
+# remove the new line character from the string
 long_string = long_string.strip()
 
 
 # save it to a file
 fout = open(txt_output, 'wb')
 fout.write(long_string)
-fout.close()	
+fout.close()
 
 
 # ---------------------------------------------------
@@ -88,7 +88,7 @@ fin.seek(0,0)
 csv_data = csv.DictReader(fin)
 
 
-# strip the header into individual column headers	
+# strip the header into individual column headers
 header = header.strip().split(',')
 
 
@@ -99,7 +99,7 @@ new_data = {}
 for x in header:
 	new_data[x] = []
 
-	
+
 # parse the data from the file and store it into a dictionary
 for line in csv_data:
 	for x in header:
