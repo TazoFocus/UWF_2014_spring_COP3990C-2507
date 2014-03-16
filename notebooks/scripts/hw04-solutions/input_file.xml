@@ -1,0 +1,94 @@
+<Sensors>
+   <Cameras>
+      <camera name='cam1' type='visble' vendor='ABC optics' model='alpha1'>
+	 <fovv units='deg'> 45</fovv>
+	 <fovh units='deg'> 50</fovh>
+	 <sizev units='pix'> 480 </sizev>
+	 <sizeh units='pix'> 640 </sizeh>
+	 <ocenterv units='pix'> 3 </ocenterv>
+	 <ocenterh units='pix'> -4 </ocenterh>
+      </camera>
+      
+      <camera name='cam2' type='visible' vendor='Cameras R Us' model='alpha1'>
+	 <fovv units='degr'> 20</fovv>
+	 <fovh units='degr'> 60</fovh>
+	 <sizev units='pix'> 960 </sizev>
+	 <sizeh units='pix'> 1024 </sizeh>
+	 <ocenterv units='pix'> 1 </ocenterv>
+	 <ocenterh units='pix'> -2 </ocenterh>
+      </camera>
+      
+      <camera name='cam3' type='IR' vendor='IR for you' model='alpha1'>
+	 <fovv units='deg'> 20 </fovv>
+	 <fovh units='deg'> 20 </fovh>
+	 <sizev units='pix'> 600 </sizev>
+	 <sizeh units='pix'> 300 </sizeh>
+	 <ocenterv units='pix'> 1 </ocenterv>
+	 <ocenterh units='pix'> 1 </ocenterh>
+      </camera> 
+   </Cameras>
+   
+   <Magnetometers vendor='ABC Magz' model='xyz1.01'>
+      <heading units='deg'> 23.5 </heading> 
+      <heading units='deg'> 22 </heading> 
+      <heading units='deg'> 23 </heading> 
+      <heading units='deg'> 23.5 </heading> 
+      <heading units='deg'> 24 </heading> 
+      <heading units='deg'> 25 </heading> 
+      <heading units='deg'> 25 </heading>
+      <heading units='deg'> 25 </heading>
+      <heading units='deg'> 25 </heading>
+      <heading units='deg'> 25 </heading>
+   </Magnetometers>
+   
+   <Temperature vendor='thermometors for all' model='ax334'>
+      <temperature units='F'> 10 </temperature>
+      <temperature units='F'> 30 </temperature>
+      <temperature units='F'> 20 </temperature>
+      <temperature units='F'> 24 </temperature>
+      <temperature units='F'> 25 </temperature>
+   </Temperature>
+   
+   <Gyros vendor='Circle sensors' model='roundandround 2.1'>
+      <rates units='deg/s'>
+	 <yaw> 5 </yaw>
+	 <pitch> 10 </pitch>
+	 <roll> 15 </roll>
+      </rates> 
+      <rates units='deg/s'>
+	 <yaw> 3 </yaw>
+	 <pitch> 4 </pitch>
+	 <roll> 5 </roll>
+      </rates> 
+      <rates units='deg/s'>
+	 <yaw> 6 </yaw>
+	 <pitch> 7 </pitch>
+	 <roll> 8 </roll>
+      </rates> 
+
+   </Gyros>
+   
+   <Accelerometers vendor='we make sensors' model='updownsideways 1.1'>
+      <rates units='g'>
+	 <x> 0.3 </x>
+	 <y> 0.4 </y>
+	 <z> 0.5 </z>
+      </rates> 
+      <rates units='g'>
+	 <x> -0.3 </x>
+	 <y> -0.4 </y>
+	 <z> -0.5 </z>
+      </rates> 
+      <rates units='g'>
+	 <x> 1 </x>
+	 <y> 0.2 </y>
+	 <z> 3 </z>
+      </rates> 
+      <rates units='g'>
+	 <x> 0.7 </x>
+	 <y> 0.8 </y>
+	 <z> 0.8 </z>
+      </rates> 
+   
+   </Accelerometers>
+</Sensors>
